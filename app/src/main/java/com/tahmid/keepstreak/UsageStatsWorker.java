@@ -7,10 +7,10 @@ import androidx.work.WorkerParameters;
 
 import com.tahmid.keepstreak.data.AppDatabase;
 import com.tahmid.keepstreak.data.TrackedApp;
-import com.tahmid.keepstreak.data.TrackedAppDao; // Explicitly add this
+import com.tahmid.keepstreak.data.TrackedAppDao; 
 import com.tahmid.keepstreak.data.UsageHistory;
-import com.tahmid.keepstreak.data.UsageHistoryDao; // Explicitly add this
-import com.tahmid.keepstreak.UsageStatsHelper; // Explicitly add this
+import com.tahmid.keepstreak.data.UsageHistoryDao; 
+import com.tahmid.keepstreak.UsageStatsHelper; 
 
 import java.util.Calendar;
 import java.util.List;
@@ -34,7 +34,7 @@ public class UsageStatsWorker extends Worker {
         List<TrackedApp> trackedApps = trackedAppDao.getAll();
 
         Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.DAY_OF_YEAR, -1); // Yesterday
+        calendar.add(Calendar.DAY_OF_YEAR, -1);
         long date = calendar.get(Calendar.YEAR) * 10000L + (calendar.get(Calendar.MONTH) + 1) * 100L + calendar.get(Calendar.DAY_OF_MONTH);
 
         for (TrackedApp app : trackedApps) {
