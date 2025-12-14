@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity implements TrackedAppAdapter
                     app.streakCount = 1;
                     app.lastStreakDay = newDay;
                 } else if (newDay == lastDay) {
-                    // already counted today
+    
                 } else if (newDay == lastDay + 1) {
                     app.streakCount += 1;
                     app.lastStreakDay = newDay;
@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity implements TrackedAppAdapter
                 app.dailyVisitCount = UsageStatsHelper.getDailyVisitCount(this, app.packageName);
                 db.trackedAppDao().update(app);
             }
-            apps = db.trackedAppDao().getAll(); // reload updated
+            apps = db.trackedAppDao().getAll(); 
         }
         List<TrackedApp> finalApps = apps;
         int count = apps.size();
