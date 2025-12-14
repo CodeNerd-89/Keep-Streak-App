@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light Theme Colors -->
+    <color name="primary">#FFFFFF</color>
+    <color name="primary_dark">#E0E0E0</color>
+    <color name="accent">#00B0FF</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="background">#F5F5F5</color>
+    <color name="error_red">#D32F2F</color>
+    <color name="dark_orange">#FF8C00</color>
+    <color name="dark_red">#8B0000</color>
+</resources>

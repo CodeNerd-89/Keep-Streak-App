@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Theme Colors -->
+    <color name="primary">#212121</color>
+    <color name="primary_dark">#000000</color>
+    <color name="accent">#FF6D00</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#BDBDBD</color>
+    <color name="surface">#424242</color>
+    <color name="background">#303030</color>
+    <color name="error_red">#FFCDD2</color> <!-- Lighter red for dark theme to ensure visibility -->
+</resources>
