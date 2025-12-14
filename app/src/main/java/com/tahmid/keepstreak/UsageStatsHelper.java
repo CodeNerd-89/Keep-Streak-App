@@ -18,7 +18,7 @@ public class UsageStatsHelper {
         if (usm == null) return 0;
 
         long endTime = System.currentTimeMillis();
-        long startTime = endTime - TimeUnit.DAYS.toMillis(7); // last 7 days
+        long startTime = endTime - TimeUnit.DAYS.toMillis(7);
 
         List<UsageStats> stats =
                 usm.queryUsageStats(UsageStatsManager.INTERVAL_DAILY, startTime, endTime);
@@ -122,7 +122,6 @@ public class UsageStatsHelper {
             }
         }
 
-        // Convert milliseconds to minutes
         Map<Integer, Long> usageByHourInMinutes = new HashMap<>();
         for (Map.Entry<Integer, Long> entry : usageByHour.entrySet()) {
             usageByHourInMinutes.put(entry.getKey(), TimeUnit.MILLISECONDS.toMinutes(entry.getValue()));
